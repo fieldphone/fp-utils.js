@@ -1,0 +1,17 @@
+{
+  "name": "fp-utils.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/fieldphone/fp-utils.js",
+  "main": "fp-utils.js",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test"
+  ],
+  "dependencies": {
+    "moment": "2.6.0"
+  }
+}
