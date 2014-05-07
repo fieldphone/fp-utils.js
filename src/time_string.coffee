@@ -31,6 +31,8 @@ class FpUtils.TimeString
     (hour * 60) + minute
 
   _normalize: () ->
+    return unless @string
+    
     sTime = @_insertColon(@string)
     match = sTime.match(@regx12hr) || sTime.match(@regx24hr)
     return unless match

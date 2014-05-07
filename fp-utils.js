@@ -41,6 +41,9 @@ FpUtils.TimeString = (function() {
 
   TimeString.prototype._normalize = function() {
     var ampm, hours, match, minutes, sTime;
+    if (!this.string) {
+      return;
+    }
     sTime = this._insertColon(this.string);
     match = sTime.match(this.regx12hr) || sTime.match(this.regx24hr);
     if (!match) {
